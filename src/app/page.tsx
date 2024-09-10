@@ -8,7 +8,7 @@ import placeholder from '../assets/placeholder.png'
 const buttonStyles = "bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-semibold px-6 py-2 rounded-full"
 const gradientTextClasses = `bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text`;
 
-export function TestimonialCard() {
+function TestimonialCard() {
   return (
     <div className="max-w-md mx-auto">
       <div className="bg-gradient-to-bl from-teal-800/80 to-teal-900/30 rounded-xl p-6 shadow-lg">
@@ -35,7 +35,7 @@ export function TestimonialCard() {
   )
 }
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav className="flex items-center justify-between bg-black text-white py-4 px-10">
       <div className="flex items-center">
@@ -55,7 +55,7 @@ export const Navbar = () => {
   );
 }
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-teal-900/70 to-indigo-900/50 bg-black/30 bg-blend-overlay text-white py-12 px-8 border-t-[1px] border-gray-400">
       <div className="container mx-auto max-w-6xl">
@@ -96,7 +96,7 @@ export const Footer = () => {
   );
 }
 
-export const Divider = ({ styles }: { styles?: string }) => {
+const Divider = ({ styles }: { styles?: string }) => {
   return (
     <div className="w-full bg-transparent flex justify-center items-center">
       <span className={styles + " w-[80%] h-[1px] backdrop-blur-md"}></span>
@@ -104,7 +104,7 @@ export const Divider = ({ styles }: { styles?: string }) => {
   );
 };
 
-export function HeroSection() {
+function HeroSection() {
   return (
     <div className="relative bg-black text-white overflow-hidden py-8">
       {/* Background image and overlay */}
@@ -289,7 +289,7 @@ const FeatureItem = ({ icon: Icon, title, description }: any) => (
   </div>
 );
 
-export const FeaturesSection = () => {
+const FeaturesSection = () => {
   return (
     <div className="bg-gradient-to-tr from-gray-950 to-teal-950 bg-black/30 py-16 px-12">
       <div className="max-w-7xl mx-auto">
